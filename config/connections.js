@@ -21,17 +21,19 @@
 
 module.exports.connections = {
 
-  mysql: {
-        adapter   : 'sails-mysql',
-        host      : 'localhost',
-        port      : 3306,
-        user      : 'root',
-        password  : '',
-        database  : 'learnseries',
-        // Optional
-        charset   : 'utf8',
-        collation : 'utf8_spanish_ci'
-  }
-
+  localMysql: {
+      adapter: 'sails-mysql',
+      user: 'root',
+      password:'',
+      host: 'localhost',
+      database: 'learnseries'
+    },
+    remoteMysql: {
+      adapter: 'sails-mysql',
+      user: 'bae8a3db51f206',
+      password: '1b50c653',
+      host: 'http://us-cdbr-iron-east-03.cleardb.net',
+      database: 'heroku_ec70669176707be'
+    }
 
 };

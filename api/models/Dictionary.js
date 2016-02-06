@@ -6,7 +6,7 @@
 */
 
 module.exports = {
-  connection: 'mysql',
+  connection: 'localMysql',
   attributes: {
     id: {
         type: 'integer',
