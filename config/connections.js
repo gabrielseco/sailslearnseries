@@ -29,11 +29,12 @@ module.exports.connections = {
       database: 'learnseries'
     },
     remoteMysql: {
-      adapter: 'sails-mysql',
-      user: 'bf47a89e708315',
-      password: '5ef38639',
-      host: 'eu-cdbr-west-01.cleardb.com',
-      database: 'heroku_77e93b6df92c714'
+      adapter: 'sails-mongo',
+      host: 'ds051625.mongolab.com',
+      port: 51625,
+      user: 'heroku_d777dtlx',
+      password: 'e2m6775vc28h5m2tndlk9d2epc',
+      database: 'heroku_d777dtlx'
     }
 
 };
