@@ -35,7 +35,6 @@ var jsFilesToInject = [
   'js/**/*.js',
   'js/*.js',
 
-
   // Use the "exclude" operator to ignore files
   // '!js/ignore/these/files/*.js'
 ];
@@ -59,17 +58,9 @@ var templateFilesToInject = [
 // Prefix relative paths to source files so they point to the proper locations
 // (i.e. where the other Grunt tasks spit them out, or in some cases, where
 // they reside in the first place)
-module.exports = {
-  cssFilesToInject: cssFilesToInject.map(function(path) {
-    return '.tmp/public/' + path;
-  }),
-  jsFilesToInject: jsFilesToInject.map(function(path) {
-    return '.tmp/public/' + path;
-  }),
-  templateFilesToInject: templateFilesToInject.map(function(path) {
-    return 'assets/' + path;
-  })
-};
+module.exports.cssFilesToInject = cssFilesToInject.map(transformPath);
+module.exports.jsFilesToInject = jsFilesToInject.map(transformPath);
+module.exports.templateFilesToInject = templateFilesToInject.map(transformPath);
 
 // Transform paths relative to the "assets" folder to be relative to the public
 // folder, preserving "exclude" operators.
