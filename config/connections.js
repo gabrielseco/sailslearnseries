@@ -30,10 +30,10 @@ module.exports.connections = {
     },
     remoteMysql: {
       adapter: 'sails-mysql',
-      user: 'bae8a3db51f206',
-      password: '1b50c653',
+      user: 'bf47a89e708315',
+      password: '5ef38639',
       host: 'http://us-cdbr-iron-east-03.cleardb.net',
-      database: 'heroku_ec70669176707be'
+      database: 'heroku_77e93b6df92c714'
     }
 
 };
