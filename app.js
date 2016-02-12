@@ -37,7 +37,7 @@ process.chdir(__dirname);
     return;
   }
 
-  
+
 
   // Try to get `rc` dependency
   var rc;
@@ -55,8 +55,12 @@ process.chdir(__dirname);
     }
   }
 
-
+  var config = rc('sails');
+  if (process.env.NODE_ENV === 'production') {
+    config.hooks = config.hooks || {};
+    config.hooks.grunt = false;
+  }
   // Start server
-  sails.lift(rc('sails'));
+  sails.lift(config);
 
 })();
