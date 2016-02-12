@@ -6,7 +6,6 @@
 */
 
 module.exports = {
-  connection: 'remoteMysql',
   attributes: {
     id: {
         type: 'integer',
