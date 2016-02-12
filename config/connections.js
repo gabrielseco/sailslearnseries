@@ -32,7 +32,7 @@ module.exports.connections = {
       adapter: 'sails-mysql',
       user: 'bf47a89e708315',
       password: '5ef38639',
-      host: 'http://us-cdbr-iron-east-03.cleardb.net',
+      host: 'eu-cdbr-west-01.cleardb.com',
       database: 'heroku_77e93b6df92c714'
     }
 
