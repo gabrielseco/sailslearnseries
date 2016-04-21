@@ -11,8 +11,12 @@
 
 
 module.exports.bootstrap = function(cb) {
-  /*var sys = require('sys')
+  var sys = require('sys')
   var exec = require('child_process').exec;
+  var spawn = require('child_process').spawn
+
+  spawn('open', ['http://localhost:1337/#/', 'http://www.wordreference.com/']);
+
 
 
   var child;
@@ -30,7 +34,7 @@ module.exports.bootstrap = function(cb) {
     if (error !== null) {
       console.log('exec error: ' + error);
     }
-  });*/
+  });
 
 
   // It's very important to trigger this callback method when you are finished
