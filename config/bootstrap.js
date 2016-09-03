@@ -11,7 +11,7 @@
 
 
 module.exports.bootstrap = function(cb) {
-  var sys = require('sys')
+  /*var sys = require('sys')
   var exec = require('child_process').exec;
   var spawn = require('child_process').spawn
 
@@ -34,7 +34,7 @@ module.exports.bootstrap = function(cb) {
     if (error !== null) {
       console.log('exec error: ' + error);
     }
-  });
+  });*/
 
 
   // It's very important to trigger this callback method when you are finished
