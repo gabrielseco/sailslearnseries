@@ -17,7 +17,7 @@ module.exports = {
       type:'string'
     },
     temporada:{
-      type:'string'
+      type:'integer'
     },
     imagen:{
       type:'string'
